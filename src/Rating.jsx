@@ -20,9 +20,9 @@ function Rating(props) {
         {top5Characters.map((eachCharacter, index) => {
           const isEven = index % 2 === 0;
           return (
-            <tr class={isEven ? "light" : "dark"}>
+            <tr key={index} className={isEven ? "light" : "dark"}>
               <td>{eachCharacter.name}</td>
-              <td>{eachCharacter.skillset}</td>
+              <td>{eachCharacter.skillset.join(", ")}</td>
               <td>{eachCharacter.votes}</td>
             </tr>
           );
