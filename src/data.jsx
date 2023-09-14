@@ -1,4 +1,4 @@
-export const Character = [
+export const Characters = [
   {
     name: "Alex Louis Armstrong",
     nickName: "Major Armstrong",

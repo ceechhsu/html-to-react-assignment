@@ -1,10 +1,10 @@
 function Card(props) {
-  const character = props.character;
+  const characters = props.characters;
   return (
     <section id="character-cards">
-      {character.map((eachCharacter) => (
-        <div class="card">
-          <div class="card-titles">
+      {characters.map((eachCharacter, index) => (
+        <div className="card" key={index}>
+          <div className="card-titles">
             <h3>{eachCharacter.name}</h3>
             <h4>{eachCharacter.nickName}</h4>
           </div>

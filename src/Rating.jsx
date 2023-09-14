@@ -2,8 +2,8 @@ function Rating(props) {
   const top_characters_title = "Top Characters";
   const top_row = ["Name", "Skillset", "Votes"];
 
-  const character = props.character;
-  const top5Characters = character
+  const characters = props.characters;
+  const top5Characters = characters
     .slice() // Create a shallow copy of the array
     .sort((a, b) => b.votes - a.votes) // Sort by votes in descending order
     .slice(0, 5); // Get the top 5 items
